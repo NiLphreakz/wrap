@@ -65,6 +65,7 @@ echo -e   "  \e[$number (•3)\e[m \e[$below PANEL WIREGUARDS\e[m            \e[
 echo -e   "  \e[$number (•4)\e[m \e[$below PANEL SHADOWSOCKS\e[m           \e[$number (10)\e[m \e[$below CHECK RUNNING\e[m"
 echo -e   "  \e[$number (•5)\e[m \e[$below OPENSSH & OPENVPN\e[m           \e[$number (11)\e[m \e[$below REBOOT VPS\e[m"
 echo -e   "  \e[$number (•6)\e[m \e[$below SYSTEM MENU\e[m                 \e[$number (12)\e[m \e[$below INFO ALL PORT\e[m"
+echo -e   "  \e[$number (•13)\e[m \e[$below NOOBZVPN MENU\e[m"
 echo -e   " \e[$line════════════════════════════════════════════════════════════\e[m"
 echo -e   "  \e[$below Premium VPS by XoolVPN"
 echo -e   "  \e[$below Thank you for using script by XoolVPN"
@@ -110,6 +111,9 @@ reboot
 ;;
 12)
 info
+;;
+13)
+wget -q https://raw.githubusercontent.com/NiLphreakz/WarCry/main/m-noobz && chmod +x m-noobz && ./m-noobz
 ;;
 x)
 clear
